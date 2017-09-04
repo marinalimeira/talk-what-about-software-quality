@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Software Quality: wat?</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          Qualidade de Software: wat?
+        </section>
+
+        <section>
+          Marina Limeira
+          marinalimeira.com
+
+          puc - bio
+          testr
+
+        </section>
+
+        <section>
+          intro legal sobre qualidade
+        </section>
+
+        <section>
+          piramide dos testes
+        </section>
+        
+        <section>
+          Testes unitários ~highlighted - do lado
+          <ul>
+            <li>Sem dependências externas</li>
+            <li>Rápidos</li>
+            <li>(?) verificar todas as possibilidades de erro</li>
+          </ul>
+        </section>
+
+        <section>
+          Testes de integração ~highlighted
+          <ul>
+            <li>É aqui que você chama a API do back-end</li>
+            <li>Verifica se seu código inteiro funciona como esperado</li>
+          </ul>
+        </section>
+
+        <section>
+          Testes de interface ~highlighted
+          <ul>
+            <li>Automatizar testes de regressão!</li>
+            <li>Vai. Demorar. Muito.</li>
+          </ul>
+        </section>
+
+        <section>
+          Webdrivers
+        </section>
+
+        <section>
+          caso do ul/li ruim de clicar
+          - worth it adicionar um id só pra dar o click direito :)
+        </section>
+
+
+        <section>nossa, quanto código :desnecessauro:</section>
+
+        <section><a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">Código legado é um código sem testes automatizados</a></section>
+
+
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
