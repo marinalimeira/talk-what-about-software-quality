@@ -21,6 +21,17 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
+  <!-- 
+    http://webdriver.io/
+    http://codecept.io/
+    https://splinter.readthedocs.io/en/latest/
+    http://nightwatchjs.org/
+    https://github.com/gotwarlost/istanbul
+    codecov.io
+
+    30 min de palestra
+  -->
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
@@ -30,15 +41,77 @@
 
         <section>
           Marina Limeira
-          marinalimeira.com
+          <a href="http://marinalimeira.com/">marinalimeira.com</a>
 
           puc - bio
           testr
+        </section>
 
+        <section>
+          Avisos
+
+          - ja trabalhei como qa
+          - Poucos GIFs
+          - muitos conceitos
+          - meu xp, você pode concordar ou discordar e compartilhar seus pontos de vista :)
         </section>
 
         <section>
           intro legal sobre qualidade
+        </section>
+
+        <section>
+          qualidade de software: 
+        </section>
+
+        <section>
+          (provavelmente) sua definicao de qualidade:
+          se funciona, tá tudo ok!
+        </section>
+
+        <section>
+          PO/PM: tem que atender meus requisitos
+          UX: o usuário tem que saber usar
+          --
+          incluir em algum lugar as diferentes vistas de qa
+
+          confouser se esse slide faz sentido :P
+        </section>
+
+        <section>
+          papel do quality assurance (QA)! 
+          (se ele existir....)
+        </section>
+
+        <section>
+          daqui 1 mês, ainda funciona?
+        </section>
+
+        <section>
+          não é papel de ninguém fazer teste de regressão e checar se a cada deploy as funcionalidades básicas estão *ainda* funcionando
+          :desnecessauro:
+
+          se o seu time usa Continuous Delivery, ferrou *risos*
+        </section>
+
+        <section>
+          qa acaba aprendendo muito sobre o negócio, então é válido (ficou estranho?) fazer testes como o cliente, fluxos etcs
+        </section>
+
+        <section>
+          solução: automatiza tudo! :D
+
+          voces sao devs, pela mor de deus
+        </section>
+
+        <section>
+          =========== VOCE É A ÚLTIMA PESSOA CAPACIDADE PRA DIZER QUE A --------SUA--------- FEATURE FUNCIONA ================
+          --------------NAO SEI ONDE ENCAIXAR ISSO---------------------------
+        </section>
+
+        <section>
+          act
+          assert
         </section>
 
         <section>
@@ -50,14 +123,15 @@
           <ul>
             <li>Sem dependências externas</li>
             <li>Rápidos</li>
+            <li>independente do mudno externo, esse trecho funciona como eu quero?</li>
             <li>(?) verificar todas as possibilidades de erro</li>
           </ul>
         </section>
 
         <section>
-          Testes de integração ~highlighted
+          Testes de integração/serviço ~highlighted
           <ul>
-            <li>É aqui que você chama a API do back-end</li>
+            <li>É aqui que você chama a API do back-end || elastic search</li>
             <li>Verifica se seu código inteiro funciona como esperado</li>
           </ul>
         </section>
@@ -67,24 +141,112 @@
           <ul>
             <li>Automatizar testes de regressão!</li>
             <li>Vai. Demorar. Muito.</li>
+            vai quebrar facil
+            só testa os fluxos principais
           </ul>
         </section>
 
         <section>
-          Webdrivers
+          onde isso roda: Webdrivers
         </section>
 
         <section>
-          caso do ul/li ruim de clicar
-          - worth it adicionar um id só pra dar o click direito :)
+          <code>
+          &lt;div class=&quot;list-group-item&quot;&gt;
+          &lt;div class=&quot;row table-row&quot;&gt;
+          &lt;div class=&quot;col-xs-2&quot;&gt;
+          &lt;b&gt;05/09/2017&lt;/b&gt;&lt;br&gt;
+          18:55&lt;/div&gt;
+          &lt;div class=&quot;col-xs-8&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-audit=&quot;...&quot;&gt;&lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login&lt;/a&gt;&lt;br&gt;
+          Usu&aacute;rio realizou login na plataforma.
+          &lt;/div&gt;
+          &lt;div class=&quot;col-xs-2&quot;&gt;
+          &lt;b&gt;Marina Limeira&lt;/b&gt;&lt;br&gt;
+          marina@mailinator.com
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          (casos reais)
         </section>
 
+        <section>
+          - caso de form
+          - worth it adicionar um id só pra dar o click direito :)
+
+          tirou boostrap, ferrou tudo.
+          PESSOAS VAO SOFRER
+        </section>
+
+        <section>
+          BDD
+          bdd funciona? é realmente útil?
+
+
+          escrever comportamentos :)
+
+          capybara (fronts)? usa bdd
+  
+          gerking - puro texto
+          rspec  -- jasmine
+
+          o quao util voce precisa que seu
+          o quanto voce precisa que  seus testes documentem seu codigo?
+
+
+          USE SEUS TESTES COMO DOCUMENTAÇÃO :D
+          voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
+        </section>
+
+        <section>
+          Como ter métricas disso?
+          codecov.io 
+        </section>
+
+        <section>
+          linters
+          pagarme
+        </section>
 
         <section>nossa, quanto código :desnecessauro:</section>
+
+        <section>
+          refatore, e agora?
+        </section>
 
         <section><a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">Código legado é um código sem testes automatizados</a></section>
 
 
+        <!--
+
+          qualidade é papel do time!o
+          é meio subjevivo
+
+          qa: reunir tudo isso o conjunto todo tá ok?
+
+          ajuda na ux
+          ajuda na definicao do produto
+          ajuda performance
+          ajuda segurança
+
+          a gente ja ta preocupado com arguitetura, tecnologias,
+          ah, mas tem o negoci od oux
+          - mts cosias :P
+
+
+          do mesmo jeito que o po te diz que tem que funcionar assim,
+          o qa vai te dizer que a qualidade é assim 
+          
+          a entrega é do *time*
+
+          sera que o botao funciona em todos os browsers
+          na bio, galera usa xp com ie8
+
+
+        
+        
+        -->
 				<section>Slide 1</section>
 				<section>Slide 2</section>
 			</div>
