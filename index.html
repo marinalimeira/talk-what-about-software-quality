@@ -21,133 +21,155 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
-  <!-- 
-    http://webdriver.io/
-    http://codecept.io/
-    https://splinter.readthedocs.io/en/latest/
-    http://nightwatchjs.org/
-    https://github.com/gotwarlost/istanbul
-    codecov.io
-
-    30 min de palestra
-  -->
 
 	<body>
 		<div class="reveal">
 			<div class="slides">
         <section>
-          Qualidade de Software: wat?
+          <h1>Qualidade de Software: wat?</h1>
         </section>
 
         <section>
-          Marina Limeira
+          <h2>Oi!</h2>
+
+          <img src="images/logo/bio-logo-white.svg"> 
+          <img src="images/logo/testr-logo.png" alt="">
+          <img src="images/logo/puc-logo.png" alt="">
+
           <a href="http://marinalimeira.com/">marinalimeira.com</a>
-
-          puc - bio
-          testr
         </section>
 
         <section>
-          Avisos
+          <h1>Avisos</h1>
 
-          - ja trabalhei como qa
-          - Poucos GIFs
-          - muitos conceitos
-          - meu xp, você pode concordar ou discordar e compartilhar seus pontos de vista :)
+          <ul>
+            <li>Já trabalhei como QA</li>
+            <li>Baseado na minha XP, você pode concordar ou discordar e compartilhar seus pontos de vista :)</li>
+          </ul>
         </section>
 
         <section>
-          intro legal sobre qualidade
+          <h1>Qualidade pra quem..?</h1>
         </section>
 
         <section>
-          qualidade de software: 
+          <h2>Produto: atende os requisitos?</h2>
+          <h2>UX: o usuário sabe usar sem precisar de um manual?</h2>
         </section>
 
         <section>
-          (provavelmente) sua definicao de qualidade:
-          se funciona, tá tudo ok!
+          <h2>Você: tá usando &lt;insira-framework-legal-aqui&gt;?</h2>
+          <h2>qualquer outra coisa, fala com o QA!</h2>
         </section>
 
         <section>
-          PO/PM: tem que atender meus requisitos
-          UX: o usuário tem que saber usar
-          --
-          incluir em algum lugar as diferentes vistas de qa
+          <h1>Quality Assurance:</h1>
 
-          confouser se esse slide faz sentido :P
+          <ul>
+            <li>Feature funciona em todos os fluxos?</li>
+            <li>Do jeito que o UX pediu é realmente viável?</li>
+            <li>Se abrir uma tela com 1903192 itens do BD, o servidor vai cair?</li>
+            <li>Funciona no Windows XP com o IE8?</li>
+            <li><strike>Testes manuais de regressão</strike></li>
+          </ul>
         </section>
 
+        <!--<section>
+          Do mesmo jeito que a pessoa responsável pelo produto define como o sistema funciona,
+          a pessoa responsável por QA vai te ajudar a manter tudo nos eixos :P
+        </section>-->
+
         <section>
-          papel do quality assurance (QA)! 
-          (se ele existir....)
+          <h2>Não é papel de ninguém fazer teste de regressão a cada deploy em produção :)</h2>
+          <p>Principalmente se seu time utiliza Entrega contínua</p>
+
+          INSERIR DESNECESSAURO
         </section>
 
-        <section>
-          daqui 1 mês, ainda funciona?
-        </section>
-
-        <section>
-          não é papel de ninguém fazer teste de regressão e checar se a cada deploy as funcionalidades básicas estão *ainda* funcionando
-          :desnecessauro:
-
-          se o seu time usa Continuous Delivery, ferrou *risos*
-        </section>
-
-        <section>
+        <!--<section>
           qa acaba aprendendo muito sobre o negócio, então é válido (ficou estranho?) fazer testes como o cliente, fluxos etcs
+        </section> -->
+
+        <section>
+          Vai dar trabalho *risos*
         </section>
 
         <section>
-          solução: automatiza tudo! :D
-
-          voces sao devs, pela mor de deus
+          Refatorei, e agora?
         </section>
 
         <section>
-          =========== VOCE É A ÚLTIMA PESSOA CAPACIDADE PRA DIZER QUE A --------SUA--------- FEATURE FUNCIONA ================
-          --------------NAO SEI ONDE ENCAIXAR ISSO---------------------------
+          Daqui a 1 mês, ainda funciona?
         </section>
 
         <section>
-          act
-          assert
+          <blockquote>
+            Código legado é um código sem testes automatizados.
+          </blockquote>
+
+          <a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">A importância de sistemas legados e como melhorar nosso relacionamento com elesi</a>, por <a href="https://twitter.com/narcisobenigno">@narcisobenigno</a>
         </section>
+
+        <section>
+          <h2>AUTOMATIZA TUDO!</h2>
+          <!-- voces sao devs, pela mor de deus -->
+        </section>
+        
 
         <section>
           piramide dos testes
         </section>
         
         <section>
-          Testes unitários ~highlighted - do lado
+          <h1>Unitários</h1>
           <ul>
             <li>Sem dependências externas</li>
             <li>Rápidos</li>
             <li>independente do mudno externo, esse trecho funciona como eu quero?</li>
-            <li>(?) verificar todas as possibilidades de erro</li>
+            <li>É aqui que você checa todas possibilidades de erro</li>
+            <li>Ótimo para manter como documentação!</li>
           </ul>
         </section>
 
         <section>
-          Testes de integração/serviço ~highlighted
+          <h1>Integração/serviço</h1>
+
           <ul>
-            <li>É aqui que você chama a API do back-end || elastic search</li>
+            <li>É aqui que você chama a API do back-end, ElasticSearch e afins</li>
             <li>Verifica se seu código inteiro funciona como esperado</li>
+            <li>Ótimo para manter como documentação!!</li>
           </ul>
         </section>
 
         <section>
-          Testes de interface ~highlighted
+          <h1>Interface</h1>
+
           <ul>
             <li>Automatizar testes de regressão!</li>
             <li>Vai. Demorar. Muito.</li>
-            vai quebrar facil
-            só testa os fluxos principais
+            <li>Sensível a alterações de tela</li>
+            <li>Custoso demais para testar todos os caminhos possíveis</li>
+            <li>Ótimo para manter como documentação!!!</li>
           </ul>
         </section>
 
+  <!-- 
+    http://webdriver.io/
+    http://codecept.io/
+    http://nightwatchjs.org/
+    https://github.com/gotwarlost/istanbul
+    codecov.io
+  -->
         <section>
-          onde isso roda: Webdrivers
+          <h1>Webdriver</h1>
+          <p>tl;dr:<p>
+          <h2>Virou recomendação da W3C :tada:</h2>
+          <!-- headless, entao normalmente nao vai precisar abrir o browser para executar essas tretas todas -->
+        </section>
+
+        <section>
+          abrir site do front in bh, clicar em coisas
+          alterar minha foto e colocar um dinossauro?
         </section>
 
         <section>
@@ -195,7 +217,6 @@
           o quanto voce precisa que  seus testes documentem seu codigo?
 
 
-          USE SEUS TESTES COMO DOCUMENTAÇÃO :D
           voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
         </section>
 
@@ -205,6 +226,12 @@
         </section>
 
         <section>
+          act
+          assert
+        </section>
+
+
+        <section>
           linters
           pagarme
         </section>
@@ -212,43 +239,10 @@
         <section>nossa, quanto código :desnecessauro:</section>
 
         <section>
-          refatore, e agora?
+          Obrigada! :)
+          @marinalimeira_
+          @bionexo_
         </section>
-
-        <section><a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">Código legado é um código sem testes automatizados</a></section>
-
-
-        <!--
-
-          qualidade é papel do time!o
-          é meio subjevivo
-
-          qa: reunir tudo isso o conjunto todo tá ok?
-
-          ajuda na ux
-          ajuda na definicao do produto
-          ajuda performance
-          ajuda segurança
-
-          a gente ja ta preocupado com arguitetura, tecnologias,
-          ah, mas tem o negoci od oux
-          - mts cosias :P
-
-
-          do mesmo jeito que o po te diz que tem que funcionar assim,
-          o qa vai te dizer que a qualidade é assim 
-          
-          a entrega é do *time*
-
-          sera que o botao funciona em todos os browsers
-          na bio, galera usa xp com ie8
-
-
-        
-        
-        -->
-				<section>Slide 1</section>
-				<section>Slide 2</section>
 			</div>
 		</div>
 
