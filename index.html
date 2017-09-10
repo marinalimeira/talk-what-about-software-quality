@@ -7,7 +7,7 @@
 		<title>Software Quality: wat?</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/bionexo.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,49 +25,68 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+        <span class="footer">#FrontInBH @marinalimeira_</span>
+        <section class="dark-blue-bg intro">
+          <h2>Ois, me chamo Marina :)</h2>
+          <br>
+
+          <img src="images/logo/bio-logo-white.svg" height="50px" style="margin-bottom: 15px;"><br>
+          <img src="images/logo/testr-logo.png" alt="" height="80px"><br>
+          <img src="images/logo/puc-logo.png">
+          <br>
+
+          <a href="http://marinalimeira.com/" style="bottom: -50px">marinalimeira.com</a>
+        </section>
+
         <section>
           <h1>Qualidade de Software: wat?</h1>
         </section>
 
-        <section>
-          <h2>Oi!</h2>
-
-          <img src="images/logo/bio-logo-white.svg"> 
-          <img src="images/logo/testr-logo.png" alt="">
-          <img src="images/logo/puc-logo.png" alt="">
-
-          <a href="http://marinalimeira.com/">marinalimeira.com</a>
-        </section>
-
-        <section>
+        <section class="red-bg">
           <h1>Avisos</h1>
 
           <ul>
             <li>Já trabalhei como QA</li>
+            <li>Muitos conceitos ~aka sem códigos</li>
             <li>Baseado na minha XP, você pode concordar ou discordar e compartilhar seus pontos de vista :)</li>
           </ul>
         </section>
 
         <section>
           <h1>Qualidade pra quem..?</h1>
+          <!-- 
+            n pessoas envolvidas no processo
+          -->
         </section>
 
         <section>
-          <h2>Produto: atende os requisitos?</h2>
-          <h2>UX: o usuário sabe usar sem precisar de um manual?</h2>
+          <!-- 
+           trazendo isso pro ladoo de desenvolvimento de sooftaare,
+          -->
+          <h2 class="blue">Produto</h2>
+          <p>Atende os requisitos?</p>
+          <div class="fragment">
+            <h2 class="blue">UX</h2>
+            <p>O usuário sabe usar sem precisar de um manual?</p>
+          </div>
         </section>
 
         <section>
-          <h2>Você: tá usando &lt;insira-framework-legal-aqui&gt;?</h2>
-          <h2>qualquer outra coisa, fala com o QA!</h2>
+          <h2 class="blue">Você</h2>
+          <p>Tá usando &lt;insira-framework-legal-aqui&gt;?</p>
         </section>
 
-        <section>
-          <h1>Quality Assurance:</h1>
+        <!--<h2>qualquer outra coisa, fala com o QA!</h2>
+          se o ux pediu que clicasse no modal e soltasse fogos de artificio,
+          voce como dev vai até dizer que nao é viavel tecnicamente fazer isso e nao vale o esforço
+          porem oo qa é o cara que vai dizer que a quantidade de bugs que isso pode gerar ou
+          os novos casos de teste ou etcs,.
+        -->
+
+        <section class="dark-blue-bg">
+          <h1>Quality Assurance</h1>
 
           <ul>
-            <li>Feature funciona em todos os fluxos?</li>
-            <li>Do jeito que o UX pediu é realmente viável?</li>
             <li>Se abrir uma tela com 1903192 itens do BD, o servidor vai cair?</li>
             <li>Funciona no Windows XP com o IE8?</li>
             <li><strike>Testes manuais de regressão</strike></li>
@@ -79,60 +98,113 @@
           a pessoa responsável por QA vai te ajudar a manter tudo nos eixos :P
         </section>-->
 
-        <section>
-          <h2>Não é papel de ninguém fazer teste de regressão a cada deploy em produção :)</h2>
-          <p>Principalmente se seu time utiliza Entrega contínua</p>
+          <section data-background="images/desnecessauro.png"
+                   data-background-repeat="no-repeat"
+                   data-background-size="310px 365px"
+                   data-background-position="bottom 10px right 190px">
 
-          INSERIR DESNECESSAURO
+          <h2>Não é papel de ninguém fazer teste de regressão a cada deploy em produção,</h2>
+          <p>principalmente se seu time faz Entrega Contínua :)</p>
         </section>
 
         <!--<section>
           qa acaba aprendendo muito sobre o negócio, então é válido (ficou estranho?) fazer testes como o cliente, fluxos etcs
         </section> -->
 
-        <section>
-          Vai dar trabalho *risos*
+        <section class="blue-bg">
+          <h2>✰ AUTOMATIZA TUDO ✰</h2>
+          <!-- voces sao devs, pela mor de deus -->
         </section>
 
+        <!-- ah, meu time nao tem qa - pior ainda! mais um motivo pra nao se preocu[ar com isso
+          existem outras perguntas importantes a serem resolvidas também, como 
+          atualizacoes major que é complicado atualizar a versao, e voce fica sem garantia
+        -->
         <section>
-          Refatorei, e agora?
+          <!-- aprendi esse padrao novo super legal, e eu vou testar naquela classe super importante
+            que tavam ha meses sem mexer mas eu garanto que vai dar tudoo certo! -->
+          <h2>Daqui a 1 mês, ainda funciona?</h2>
+          <h2 class="fragment">Refatorei, e agora?</h2>
         </section>
-
-        <section>
-          Daqui a 1 mês, ainda funciona?
-        </section>
+        <!--se voce nao tem garantia pra atualizar oou refatorar seu projeto, voce acaba chegando
+        no fantasma que assombra a vida de todo mundo: mexer com código legado.
+        o que torna um c;ódigo legadoo?
+        a questao é voce ter orgulho /E NAO MEDO/ de manter esse mesmo projeto daqui a uns anos.
+        ou ate mesmo que voce mude de projeto, nao queira ser o responsavel por algo que 
+        hoje as pessoas tem medo de alterar
+        tem u mpost bem bacana do Narciso sobre projetos legados e como saber lidar com isso,
+        porque na Bio - SOCORR BAHIA, POSSO FALAR TD?
+        //menciono a plataforma da bio?
+        -->
 
         <section>
           <blockquote>
             Código legado é um código sem testes automatizados.
           </blockquote>
 
-          <a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">A importância de sistemas legados e como melhorar nosso relacionamento com elesi</a>, por <a href="https://twitter.com/narcisobenigno">@narcisobenigno</a>
+          <cite>
+            Michael C. Feathers
+          </cite>
         </section>
 
-        <section>
-          <h2>AUTOMATIZA TUDO!</h2>
-          <!-- voces sao devs, pela mor de deus -->
-        </section>
-        
 
-        <section>
-          piramide dos testes
+        <section class="center">
+          <img src="images/test-pyramid.png" alt="">
         </section>
+
+        <!--  
+          é uma unidade, entaoo é só um entao nao tem dependencias externas
+
+
+          se eu tenho uma funcao que é responsval por calcular preços de um historico de compras
+          e a api me manda esses dados (crus)?, quando eu mando tais parametros para a funcao
+          de calcular, ela me retorna o valor correto?
+
+          perfeitoo pra erros:
+          se voce tem um form e os valores desse form tao no stado do oredux, quando os reducers
+          receberem um e-mail oonválido ou qualquer coisa estranha, o eu to populando a 
+          key de errors
+          do meu estado? - é um jeito de pensar independente de como voce recebeu o parametro,
+          mas quando voce recebeu, se comportou do jeito que voce queria?
+
+          ou entaoo, se eu receber string numa funcao que só pode receber inteiro, (mas por acaso
+          pode acabar recebendo string, tá tratando o erro do jeito certo?
+
+
+          nem todo mundo faz codigoo legivel, entao nao é bom esperar que qualquer 
+          pessoa consiga ler
+        -->
         
-        <section>
+        <section data-background="images/test-pyramid-unit2.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
           <h1>Unitários</h1>
           <ul>
             <li>Sem dependências externas</li>
             <li>Rápidos</li>
-            <li>independente do mudno externo, esse trecho funciona como eu quero?</li>
+            <li>Independente do resto da aplicação, esse trecho de código funciona como eu quero?</li>
             <li>É aqui que você checa todas possibilidades de erro</li>
+            <li>Sensíveis demais a alteração de código</li>
             <li>Ótimo para manter como documentação!</li>
           </ul>
         </section>
 
-        <section>
-          <h1>Integração/serviço</h1>
+        <!-- 
+
+          é aqui que voce checa se tá tudo ok com o mundo de fora.
+
+          nao é pra testar aqui a api do amiguinho, mas tem é bom checar se o seu reducer
+          ta sendo populado direito
+
+          ninguem lembra do codigo que fez no inicio do ano.
+        -->
+
+        <section data-background="images/test-pyramid-integration2.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
+          <h1>Integração</h1>
 
           <ul>
             <li>É aqui que você chama a API do back-end, ElasticSearch e afins</li>
@@ -140,8 +212,20 @@
             <li>Ótimo para manter como documentação!!</li>
           </ul>
         </section>
+        <!-- i
+          sao esses testes que vao te ajudar a manter tudo sob controle se voce
+          for atualizar uma versao major do angular.
 
-        <section>
+
+
+          uma coisa é vc chamar um metodo e checar ele, outra coisa é 
+          abrir browser e fazer 192384 coisas
+        -->
+
+        <section data-background="images/test-pyramid-interface2.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
           <h1>Interface</h1>
 
           <ul>
@@ -149,7 +233,7 @@
             <li>Vai. Demorar. Muito.</li>
             <li>Sensível a alterações de tela</li>
             <li>Custoso demais para testar todos os caminhos possíveis</li>
-            <li>Ótimo para manter como documentação!!!</li>
+            <li><strong>Ótimo para manter como documentação!!!</strong></li>
           </ul>
         </section>
 
@@ -161,48 +245,54 @@
     codecov.io
   -->
         <section>
-          <h1>Webdriver</h1>
-          <p>tl;dr:<p>
-          <h2>Virou recomendação da W3C :tada:</h2>
+          <h1>Webdrivers</h1>
+          <!-- inicia uma instancia do browser e controla. -->
+          <div class="inline-block">
+            webdriver.io<br>
+            <img src="images/logo/webdriverio.png" alt="" height="165px">
+          </div>
+          <div class="inline-block">
+            selenium<br>
+            <img src="images/logo/selenium.png" alt="">
+          </div>
           <!-- headless, entao normalmente nao vai precisar abrir o browser para executar essas tretas todas -->
         </section>
 
-        <section>
-          abrir site do front in bh, clicar em coisas
-          alterar minha foto e colocar um dinossauro?
+        <section class="dark-blue-bg">
+          <h1>Headless Browsers</h1>
         </section>
 
         <section>
-          <code>
-          &lt;div class=&quot;list-group-item&quot;&gt;
-          &lt;div class=&quot;row table-row&quot;&gt;
-          &lt;div class=&quot;col-xs-2&quot;&gt;
-          &lt;b&gt;05/09/2017&lt;/b&gt;&lt;br&gt;
-          18:55&lt;/div&gt;
-          &lt;div class=&quot;col-xs-8&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-audit=&quot;...&quot;&gt;&lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login&lt;/a&gt;&lt;br&gt;
-          Usu&aacute;rio realizou login na plataforma.
-          &lt;/div&gt;
-          &lt;div class=&quot;col-xs-2&quot;&gt;
-          &lt;b&gt;Marina Limeira&lt;/b&gt;&lt;br&gt;
-          marina@mailinator.com
-          &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;/div&gt;
-          </code>
-          (casos reais)
+          <pre>
+            <code data-trim>
+&lt;div class=&quot;list-group-item&quot;&gt;
+  &lt;div class=&quot;row table-row&quot;&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;
+      &lt;b&gt;05/09/2017&lt;/b&gt;&lt;br&gt;
+          18:55
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-audit=&quot;...&quot;&gt;
+      &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login&lt;/a&gt;&lt;br&gt;
+      Usu&aacute;rio realizou login na plataforma.
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;
+      &lt;b&gt;Marina Limeira&lt;/b&gt;&lt;br&gt;
+      marina@mailinator.com
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
         </section>
 
-        <section>
-          - caso de form
-          - worth it adicionar um id só pra dar o click direito :)
-
-          tirou boostrap, ferrou tudo.
-          PESSOAS VAO SOFRER
-        </section>
+<!--          tirou boostrap, ferrou tudo.
+  se seu codigoo for assim, PESSOAS VAO SOFRER -->
 
         <section>
-          BDD
+          <h1>Behavior Driven Development</h1>
+          <p class="fragment">Ferramenta de Testes ou de Documentação?</p>
+          <!--
           bdd funciona? é realmente útil?
 
 
@@ -211,37 +301,39 @@
           capybara (fronts)? usa bdd
   
           gerking - puro texto
-          rspec  -- jasmine
+          rspec  - jasmine
 
           o quao util voce precisa que seu
           o quanto voce precisa que  seus testes documentem seu codigo?
 
 
           voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
+          -->
+        </section>
+
+        <section class="dark-blue-bg">
+          Quando eu clico em <strong>Abrir Carrinho</strong><br>
+          E seleciono o item <strong>Dinossauro</strong><br>
+          O valor total da compra é atualizado para R$ <strong>23,40</strong>
         </section>
 
         <section>
-          Como ter métricas disso?
-          codecov.io 
+          <h2>Métricas</h2>
+          codecov.io <br>
+          <img src="images/logo/codecov-logo.png" height="180px">
         </section>
 
         <section>
-          act
-          assert
+          <h2>Linters</h2>
+          <a href="https://github.com/pagarme/react-style-guide">pagarme/react-style-guide</a>
         </section>
-
 
         <section>
-          linters
-          pagarme
+          <a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">A importância de sistemas legados e como melhorar nosso relacionamento com eles</a>, por Narciso Benigno
         </section>
-
-        <section>nossa, quanto código :desnecessauro:</section>
 
         <section>
           Obrigada! :)
-          @marinalimeira_
-          @bionexo_
         </section>
 			</div>
 		</div>
@@ -253,6 +345,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+        transition: 'fade',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
