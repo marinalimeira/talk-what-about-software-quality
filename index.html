@@ -27,15 +27,17 @@
 			<div class="slides">
         <span class="footer">#FrontInBH @marinalimeira_</span>
         <section class="dark-blue-bg intro">
-          <h2>Ois, me chamo Marina :)</h2>
+          <h2 style="margin-bottom: 0px;">Ois,<br>me chamo Marina :)</h2>
+          <a href="http://marinalimeira.com/" class="blue">marinalimeira.com</a>
+          <br>
+          <br>
           <br>
 
-          <img src="images/logo/bio-logo-white.svg" height="50px" style="margin-bottom: 15px;"><br>
-          <img src="images/logo/testr-logo.png" alt="" height="80px"><br>
-          <img src="images/logo/puc-logo.png">
+          <img src="images/logo/bio-logo-white.svg" height="50px" style="margin-bottom: 35px;">
+          <img src="images/logo/testr-logo.png" alt="" height="80px" style="margin-bottom: 15px;">
+          <img src="images/logo/puc-logo.png" style="margin-top: 10px;">
           <br>
 
-          <a href="http://marinalimeira.com/" style="bottom: -50px">marinalimeira.com</a>
         </section>
 
         <section>
@@ -59,7 +61,7 @@
           -->
         </section>
 
-        <section>
+        <section class="no-margin">
           <!-- 
            trazendo isso pro ladoo de desenvolvimento de sooftaare,
           -->
@@ -69,11 +71,10 @@
             <h2 class="blue">UX</h2>
             <p>O usuário sabe usar sem precisar de um manual?</p>
           </div>
-        </section>
-
-        <section>
-          <h2 class="blue">Você</h2>
-          <p>Tá usando &lt;insira-framework-legal-aqui&gt;?</p>
+          <div class="fragment">
+            <h2 class="blue">Você</h2>
+            <p>Tá usando &lt;insira-framework-legal-aqui&gt;?</p>
+          </div>
         </section>
 
         <!--<h2>qualquer outra coisa, fala com o QA!</h2>
@@ -84,7 +85,7 @@
         -->
 
         <section class="dark-blue-bg">
-          <h1>Quality Assurance</h1>
+          <h2>Quality Assurance</h2>
 
           <ul>
             <li>Se abrir uma tela com 1903192 itens do BD, o servidor vai cair?</li>
@@ -104,7 +105,7 @@
                    data-background-position="bottom 10px right 190px">
 
           <h2>Não é papel de ninguém fazer teste de regressão a cada deploy em produção,</h2>
-          <p>principalmente se seu time faz Entrega Contínua :)</p>
+          <p>principalmente se seu time faz<br>Entrega Contínua :)</p>
         </section>
 
         <!--<section>
@@ -124,7 +125,6 @@
           <!-- aprendi esse padrao novo super legal, e eu vou testar naquela classe super importante
             que tavam ha meses sem mexer mas eu garanto que vai dar tudoo certo! -->
           <h2>Daqui a 1 mês, ainda funciona?</h2>
-          <h2 class="fragment">Refatorei, e agora?</h2>
         </section>
         <!--se voce nao tem garantia pra atualizar oou refatorar seu projeto, voce acaba chegando
         no fantasma que assombra a vida de todo mundo: mexer com código legado.
@@ -138,6 +138,10 @@
         -->
 
         <section>
+          <h2>Refatorei, e agora?</h2>
+        </section>
+
+        <section>
           <blockquote>
             Código legado é um código sem testes automatizados.
           </blockquote>
@@ -148,8 +152,10 @@
         </section>
 
 
-        <section class="center">
-          <img src="images/test-pyramid.png" alt="">
+        <section data-background="images/test-pyramid.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
         </section>
 
         <!--  
@@ -179,7 +185,7 @@
                  data-background-repeat="no-repeat"
                  data-background-size="647px 530px"
                  data-background-position="center">
-          <h1>Unitários</h1>
+          <h2>Unitários</h2>
           <ul>
             <li>Sem dependências externas</li>
             <li>Rápidos</li>
@@ -204,7 +210,7 @@
                  data-background-repeat="no-repeat"
                  data-background-size="647px 530px"
                  data-background-position="center">
-          <h1>Integração</h1>
+          <h2>Integração</h2>
 
           <ul>
             <li>É aqui que você chama a API do back-end, ElasticSearch e afins</li>
@@ -226,7 +232,7 @@
                  data-background-repeat="no-repeat"
                  data-background-size="647px 530px"
                  data-background-position="center">
-          <h1>Interface</h1>
+          <h2>Interface</h2>
 
           <ul>
             <li>Automatizar testes de regressão!</li>
@@ -331,13 +337,13 @@
         </section>
 
         <section>
-          <h2>Métricas</h2>
+          <h1>Métricas</h1>
           codecov.io <br>
           <img src="images/logo/codecov.png" height="180px">
         </section>
 
         <section>
-          <h2>Linters</h2>
+          <h1>Linters</h1>
           <a href="https://github.com/pagarme/react-style-guide">pagarme/react-style-guide</a>
         </section>
 
@@ -346,7 +352,8 @@
         </section>
 
         <section>
-          Obrigada! :)
+          <h1>Obrigada!</h1>
+          <a href="http://marinalimeira.com/">marinalimeira.com</a>
         </section>
 			</div>
 		</div>
