@@ -56,23 +56,19 @@
 
         <section>
           <h1>Qualidade pra quem..?</h1>
-          <!-- 
-            n pessoas envolvidas no processo
-          -->
+          <!-- do mesmo jeito que o arquiteto se preocupa se tá bonito, o engenheiro se preocupa se as coisas estão em pé~-->
         </section>
 
         <section class="no-margin">
-          <!-- 
-           trazendo isso pro ladoo de desenvolvimento de sooftaare,
-          -->
-          <h2 class="blue">Produto</h2>
+          <h2>Produto</h2>
           <p>Atende os requisitos?</p>
           <div class="fragment">
-            <h2 class="blue">UX</h2>
+            <h2>UX</h2>
             <p>O usuário sabe usar sem precisar de um manual?</p>
+            <!-- ele nao ta nem ai pros requisitos. se ele quer ao entrar numa tela, o usu[ario encontre o botao que ele quer clicar de um jeito fácil  -->
           </div>
           <div class="fragment">
-            <h2 class="blue">Você</h2>
+            <h2>Você</h2>
             <p>Tá usando &lt;insira-framework-legal-aqui&gt;?</p>
           </div>
         </section>
@@ -89,7 +85,7 @@
 
           <ul>
             <li>Se abrir uma tela com 1903192 itens do BD, o servidor vai cair?</li>
-            <li>Funciona no Windows XP com o IE8?</li>
+            <li>Funciona no Windows XP com o IE6?</li>
             <li><strike>Testes manuais de regressão</strike></li>
           </ul>
         </section>
@@ -106,39 +102,52 @@
 
           <h2>Não é papel de ninguém fazer teste de regressão a cada deploy em produção,</h2>
           <p>principalmente se seu time faz<br>Entrega Contínua :)</p>
+          <!-- a empresa nao paga gente de tecnologia pra fazer a mesma coisa sem[pre -->
         </section>
-
-        <!--<section>
-          qa acaba aprendendo muito sobre o negócio, então é válido (ficou estranho?) fazer testes como o cliente, fluxos etcs
-        </section> -->
 
         <section class="blue-bg">
           <h2>✰ AUTOMATIZA TUDO ✰</h2>
-          <!-- voces sao devs, pela mor de deus -->
+          <!-- voces sao devs, pela mor de deus
+
+            a gente é dev. a Bio nasceu de automatzar processos.
+            pedir taxi, pedir comida, nossa funcao é automatizar coisa pro usuario. porque nao auromarizar isso?
+
+          
+          -->
+        </section>
+
+        <section>
+          <h2>Nosso trabalho hoje é automatizar algo pro usuário</h2>
         </section>
 
         <!-- ah, meu time nao tem qa - pior ainda! mais um motivo pra nao se preocu[ar com isso
           existem outras perguntas importantes a serem resolvidas também, como 
           atualizacoes major que é complicado atualizar a versao, e voce fica sem garantia
         -->
-        <section>
-          <!-- aprendi esse padrao novo super legal, e eu vou testar naquela classe super importante
-            que tavam ha meses sem mexer mas eu garanto que vai dar tudoo certo! -->
-          <h2>Daqui a 1 mês, ainda funciona?</h2>
-        </section>
-        <!--se voce nao tem garantia pra atualizar oou refatorar seu projeto, voce acaba chegando
-        no fantasma que assombra a vida de todo mundo: mexer com código legado.
-        o que torna um c;ódigo legadoo?
-        a questao é voce ter orgulho /E NAO MEDO/ de manter esse mesmo projeto daqui a uns anos.
-        ou ate mesmo que voce mude de projeto, nao queira ser o responsavel por algo que 
-        hoje as pessoas tem medo de alterar
-        tem u mpost bem bacana do Narciso sobre projetos legados e como saber lidar com isso,
-        porque na Bio - SOCORR BAHIA, POSSO FALAR TD?
-        //menciono a plataforma da bio?
-        -->
 
         <section>
-          <h2>Refatorei, e agora?</h2>
+          <h2>Tretas que queremos evitar</h2>
+          <!-- aprendi esse padrao novo super legal, e eu vou testar naquela classe super importante
+          <h1>Tretas que queremos evitar:</h1>
+            que tavam ha meses sem mexer mas eu garanto que vai dar tudoo certo! -->
+            <ul>
+              <li class="fragment">Daqui a 1 mês, ainda funciona?</li>
+              <!-- não tem coisa pior do que um dev inseguro com seu próprio projeto -->
+              <!-- é muito fácil as coisas sairem do seu controle -->
+
+              <!--se voce nao tem garantia pra atualizar oou refatorar seu projeto, voce acaba chegando
+                no fantasma que assombra a vida de todo mundo: mexer com código legado.
+                o que torna um c;ódigo legadoo?
+                a questao é voce ter orgulho /E NAO MEDO/ de manter esse mesmo projeto daqui a uns anos.
+                ou ate mesmo que voce mude de projeto, nao queira ser o responsavel por algo que 
+                hoje as pessoas tem medo de alterar
+                tem u mpost bem bacana do Narciso sobre projetos legados e como saber lidar com isso,
+                porque na Bio - SOCORR BAHIA, POSSO FALAR TD?
+                //menciono a plataforma da bio?
+              -->
+
+              <li class="fragment">Refatorei, e agora?</li>
+            </ul>
         </section>
 
         <section>
@@ -151,6 +160,9 @@
           </cite>
         </section>
 
+        <section>
+          preciso de um slide pra quebrar esse contexto
+        </section>
 
         <section data-background="images/test-pyramid.png"
                  data-background-repeat="no-repeat"
@@ -228,19 +240,58 @@
           abrir browser e fazer 192384 coisas
         -->
 
+        <section> 
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">2 unit tests. 0 integration tests <a href="https://t.co/V2Z9F4G1sJ">pic.twitter.com/V2Z9F4G1sJ</a></p>&mdash; The Practical Dev (@ThePracticalDev) <a href="https://twitter.com/ThePracticalDev/status/687672086152753152">January 14, 2016</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+
         <section data-background="images/test-pyramid-interface2.png"
                  data-background-repeat="no-repeat"
                  data-background-size="647px 530px"
                  data-background-position="center">
-          <h2>Interface</h2>
+          <h2>Interface/aceitação</h2>
 
           <ul>
-            <li>Automatizar testes de regressão!</li>
+            <li>Satisfazem regras de negócio</li>
+            <li>Automatizar testes de regressão &lt;3</li>
             <li>Vai. Demorar. Muito.</li>
             <li>Sensível a alterações de tela</li>
             <li>Custoso demais para testar todos os caminhos possíveis</li>
             <li><strong>Ótimo para manter como documentação!!!</strong></li>
+            <!-- colocar uma das saidas do teste da bio -->
           </ul>
+        </section>
+  <!-- se seu codigoo for assim, PESSOAS VAO SOFRER -->
+
+        <section>
+          <h1>Behavior Driven Development</h1>
+          <p class="fragment">Ferramenta de Testes ou de Documentação?</p>
+          <!--
+          bdd funciona? é realmente útil?
+
+
+          escrever comportamentos :)
+
+          capybara (fronts)? usa bdd
+  
+          gerking - puro texto
+          rspec  - jasmine
+
+          o quao util voce precisa que seu
+          o quanto voce precisa que  seus testes documentem seu codigo?
+
+
+          voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
+          -->
+        </section>
+
+        <section class="dark-blue-bg">
+          Quando eu clico em <strong>Abrir Carrinho</strong><br>
+          E seleciono o item <strong>Dinossauro</strong><br>
+          O valor total da compra é atualizado para R$ <strong>23,40</strong>
+        </section>
+
+        <section>
+          <h2>Se você vai documentar, vai documentar pra quem?</h2>
         </section>
 
   <!-- 
@@ -305,36 +356,7 @@
           </pre>
         </section>
 
-<!--          tirou boostrap, ferrou tudo.
-  se seu codigoo for assim, PESSOAS VAO SOFRER -->
-
-        <section>
-          <h1>Behavior Driven Development</h1>
-          <p class="fragment">Ferramenta de Testes ou de Documentação?</p>
-          <!--
-          bdd funciona? é realmente útil?
-
-
-          escrever comportamentos :)
-
-          capybara (fronts)? usa bdd
-  
-          gerking - puro texto
-          rspec  - jasmine
-
-          o quao util voce precisa que seu
-          o quanto voce precisa que  seus testes documentem seu codigo?
-
-
-          voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
-          -->
-        </section>
-
-        <section class="dark-blue-bg">
-          Quando eu clico em <strong>Abrir Carrinho</strong><br>
-          E seleciono o item <strong>Dinossauro</strong><br>
-          O valor total da compra é atualizado para R$ <strong>23,40</strong>
-        </section>
+        <!--          tirou boostrap, ferrou tudo.-->
 
         <section>
           <h1>Métricas</h1>
@@ -345,11 +367,13 @@
         <section>
           <h1>Linters</h1>
           <a href="https://github.com/pagarme/react-style-guide">pagarme/react-style-guide</a>
+          <h3>JSs sem ponto-e-vírgula não passarão</h3>
         </section>
 
         <section>
           <a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">A importância de sistemas legados e como melhorar nosso relacionamento com eles</a>, por Narciso Benigno
         </section>
+
 
         <section>
           <h1>Obrigada!</h1>

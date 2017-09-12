@@ -103,7 +103,7 @@ span.footer {
   background-color: #34cdd7;
 }
 .reveal .red-bg {
-  background-color: #f32938;
+  background-color: #b71c1c;
 }
 
 /*********************************************
@@ -169,6 +169,11 @@ span.footer {
 
 .reveal .no-margin h2 {
   margin-bottom: 0px;
+}
+
+.reveal .twitter-tweet {
+  margin-left: 200px;
+  margin-top: 150px;
 }
 
 
