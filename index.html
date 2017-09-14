@@ -149,9 +149,9 @@
           </cite>
         </section>
 
-        <section>
+        <!--<section>
           <h2>...</h2>
-        </section>
+        </section>-->
 
         <section data-background="images/test-pyramid.png"
                  data-background-repeat="no-repeat"
@@ -286,21 +286,17 @@
         </section>
 
         <section>
-          <pre>
+          <pre class="no-margin">
             <code data-trim>
 &lt;div class=&quot;list-group-item&quot;&gt;
   &lt;div class=&quot;row table-row&quot;&gt;
-    &lt;div class=&quot;col-xs-2&quot;&gt;
-      &lt;b&gt;05/09/2017&lt;/b&gt;&lt;br&gt;
-          18:55
-    &lt;/div&gt;
     &lt;div class=&quot;col-xs-8&quot;&gt;
       &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-audit=&quot;...&quot;&gt;
         &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login
       &lt;/a&gt;&lt;br&gt;
       Usu&aacute;rio realizou login na plataforma.
     &lt;/div&gt;
-    &lt;div class=&quot;col-xs-2&quot;&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;
       &lt;b&gt;Marina Limeira&lt;/b&gt;&lt;br&gt;
       marina@mailinator.com
     &lt;/div&gt;
@@ -308,10 +304,7 @@
 &lt;/div&gt;
             </code>
           </pre>
-        </section>
-
-        <section>
-          <pre>
+          <pre class="fragment no-margin">
             <code>
 driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
 ../preceding-sibling::div/a')).click();
@@ -324,7 +317,25 @@ driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
         </section>
 
         <section>
-          <pre>
+          <pre class="no-margin">
+            <code data-trim>
+&lt;div class=&quot;list-group-item&quot;&gt;
+  &lt;div class=&quot;row table-row&quot;&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;openDetails user-link-2837&quot; data-audit=&quot;...&quot;&gt;
+        &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login
+      &lt;/a&gt;&lt;br&gt;
+      Usu&aacute;rio realizou login na plataforma.
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;
+      &lt;b&gt;Marina Limeira&lt;/b&gt;&lt;br&gt;
+      marina@mailinator.com
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          <pre class="fragment no-margin">
             <code>
 driver.findElement(By.className('user-link-2837')).click();
             </code>

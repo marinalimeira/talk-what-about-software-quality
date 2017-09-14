@@ -167,6 +167,10 @@ span.footer {
   margin-top: 0px;
 }
 
+.reveal .no-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .reveal .no-margin h2 {
   margin-bottom: 0px;
 }
