@@ -9,23 +9,14 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/bionexo.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<link rel="stylesheet" href="lib/css/dracula.css">
 	</head>
 
 	<body>
 		<div class="reveal">
 			<div class="slides">
-        <span class="footer">#FrontInBH @marinalimeira_</span>
+      <!--<span class="footer">#FrontInBH @marinalimeira_</span>-->
+        <span class="footer">@marinalimeira_</span>
         <section class="dark-blue-bg intro">
           <h2 style="margin-bottom: 0px;">Ois,<br>me chamo Marina :)</h2>
           <a href="http://marinalimeira.com/" class="blue">marinalimeira.com</a>
@@ -33,11 +24,9 @@
           <br>
           <br>
 
-          <img src="images/logo/bio-logo-white.svg" height="50px" style="margin-bottom: 35px;">
-          <img src="images/logo/testr-logo.png" alt="" height="80px" style="margin-bottom: 15px;">
+          <img src="images/logo/bio-logo-white.svg" height="50px" style="margin-bottom: 35px;">&nbsp;&nbsp;&nbsp;
+          <img src="images/logo/testr-logo.png" alt="" height="80px" style="margin-bottom: 15px;">&nbsp;&nbsp;&nbsp;
           <img src="images/logo/puc-logo.png" style="margin-top: 10px;">
-          <br>
-
         </section>
 
         <section>
@@ -100,7 +89,7 @@
                    data-background-size="310px 365px"
                    data-background-position="bottom 10px right 190px">
 
-          <h2>Não é papel de ninguém fazer teste de regressão a cada deploy em produção,</h2>
+          <h2>Não é papel de ninguém fazer teste manual de regressão a cada deploy em produção,</h2>
           <p>principalmente se seu time faz<br>Entrega Contínua :)</p>
           <!-- a empresa nao paga gente de tecnologia pra fazer a mesma coisa sem[pre -->
         </section>
@@ -161,7 +150,7 @@
         </section>
 
         <section>
-          preciso de um slide pra quebrar esse contexto
+          <h2>...</h2>
         </section>
 
         <section data-background="images/test-pyramid.png"
@@ -226,6 +215,7 @@
 
           <ul>
             <li>É aqui que você chama a API do back-end, ElasticSearch e afins</li>
+            <li>Não tão rápido quanto os testes unitários</li>
             <li>Verifica se seu código inteiro funciona como esperado</li>
             <li>Ótimo para manter como documentação!!</li>
           </ul>
@@ -254,56 +244,14 @@
             <li>Satisfazem regras de negócio</li>
             <li>Automatizar testes de regressão &lt;3</li>
             <li>Vai. Demorar. Muito.</li>
-            <li>Sensível a alterações de tela</li>
             <li>Custoso demais para testar todos os caminhos possíveis</li>
+            <li>Sensível a alterações de tela</li>
             <li><strong>Ótimo para manter como documentação!!!</strong></li>
             <!-- colocar uma das saidas do teste da bio -->
           </ul>
         </section>
   <!-- se seu codigoo for assim, PESSOAS VAO SOFRER -->
 
-        <section>
-          <h1>Behavior Driven Development</h1>
-          <p class="fragment">Ferramenta de Testes ou de Documentação?</p>
-          <!--
-          bdd funciona? é realmente útil?
-
-
-          escrever comportamentos :)
-
-          capybara (fronts)? usa bdd
-  
-          gerking - puro texto
-          rspec  - jasmine
-
-          o quao util voce precisa que seu
-          o quanto voce precisa que  seus testes documentem seu codigo?
-
-
-          voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
-          -->
-        </section>
-
-        <section class="dark-blue-bg">
-          Quando eu clico em <strong>Abrir Carrinho</strong><br>
-          E seleciono o item <strong>Dinossauro</strong><br>
-          O valor total da compra é atualizado para R$ <strong>23,40</strong>
-        </section>
-
-        <section>
-          <h2>Se você vai documentar, vai documentar pra quem?</h2>
-        </section>
-
-  <!-- 
-    http://webdriver.io/
-    http://codecept.io/
-    http://nightwatchjs.org/
-    https://github.com/gotwarlost/istanbul
-    codecov.io
-
-     https://github.com/airbnb/enzyme - teste de componentes react && react native - componente tem css
-     componentDidMount foi chamado? - buttonOnClick alterou tal propriedade?
-  -->
         <section>
           <h1>Webdrivers</h1>
           <!-- inicia uma instancia do browser e controla. -->
@@ -330,6 +278,11 @@
           <div class="inline-block center">
             chrome<br>
             <img src="images/logo/chrome.png" alt="" height="165px">
+          </div>
+          <div class="inline-block center">
+            phantomjs<br>
+            <img src="images/logo/phantomjs.png" alt="" height="165px">
+          </div>
         </section>
 
         <section>
@@ -343,7 +296,8 @@
     &lt;/div&gt;
     &lt;div class=&quot;col-xs-8&quot;&gt;
       &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-audit=&quot;...&quot;&gt;
-      &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login&lt;/a&gt;&lt;br&gt;
+        &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login
+      &lt;/a&gt;&lt;br&gt;
       Usu&aacute;rio realizou login na plataforma.
     &lt;/div&gt;
     &lt;div class=&quot;col-xs-2&quot;&gt;
@@ -356,22 +310,102 @@
           </pre>
         </section>
 
+        <section>
+          <pre>
+            <code>
+driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
+../preceding-sibling::div/a')).click();
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Tá tudo bem se a gente alterar o código e adicionar uma <em>class</em> ou um <em>id</em></h2>
+        </section>
+
+        <section>
+          <pre>
+            <code>
+driver.findElement(By.className('user-link-2837')).click();
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h1>Behavior Driven Development</h1>
+          <p class="fragment">Ferramenta de Testes ou de Documentação?</p>
+          <!--
+          bdd funciona? é realmente útil?
+
+
+          escrever comportamentos :)
+
+          capybara (fronts)? usa bdd
+  
+          gerking - puro texto
+          rspec  - jasmine
+
+          o quao util voce precisa que seu
+          o quanto voce precisa que  seus testes documentem seu codigo?
+
+
+          voce nao vai lembrar das regras de negocio que voce fez ha 1 ano
+          -->
+        </section>
+
+        <section class="dark-blue-bg">
+          Quando eu clico em <strong>Abrir Carrinho</strong><br>
+          E seleciono o item <strong>Dinossauro</strong><br>
+          O valor total da compra é R$ <strong>23,40</strong>
+        </section>
+
+        <section>
+          <pre>
+            <code>
+When(/^Quando eu clico em ([^"]*)$/, function (elementName) {
+  driver.findElement(By.name(elementName)).click();
+});
+
+...
+
+Then(/^O valor total da compra é R$ ([^"]*)$/, function(total) {
+    expect(driver.findElement(By.css('div#total')).getText())
+    .to.be.eql(total);
+});
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Se você vai documentar, vai documentar pra quem?</h2>
+          <p class="fragment">Na dúvida, faz o teste e vê no que dá</p>
+        </section>
+
+  <!-- 
+    http://webdriver.io/
+    http://codecept.io/
+    http://nightwatchjs.org/
+    https://github.com/gotwarlost/istanbul
+    codecov.io
+
+     https://github.com/airbnb/enzyme - teste de componentes react && react native - componente tem css
+     componentDidMount foi chamado? - buttonOnClick alterou tal propriedade?
+  -->
+
+
         <!--          tirou boostrap, ferrou tudo.-->
 
         <section>
           <h1>Métricas</h1>
           codecov.io <br>
           <img src="images/logo/codecov.png" height="180px">
+          <!--mostrar print do codecov
+            procurar mais ferramentas de metricas-->
         </section>
 
         <section>
-          <h1>Linters</h1>
-          <a href="https://github.com/pagarme/react-style-guide">pagarme/react-style-guide</a>
-          <h3>JSs sem ponto-e-vírgula não passarão</h3>
-        </section>
-
-        <section>
-          <a href="https://medium.com/bionexo/a-import%C3%A2ncia-de-sistemas-legados-e-como-melhorar-nosso-relacionamento-com-eles-4a68e7df674f">A importância de sistemas legados e como melhorar nosso relacionamento com eles</a>, por Narciso Benigno
+          <img src="images/medium-bio.png" alt="">
+          <a href="https://medium.com/bionexo">medium.com/bionexo</a>
         </section>
 
 
