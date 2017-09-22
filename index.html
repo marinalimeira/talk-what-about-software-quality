@@ -15,8 +15,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-      <!--<span class="footer">#FrontInBH @marinalimeira_</span>-->
-        <span class="footer">@marinalimeira_</span>
+        <span class="footer">#FrontInBH @marinalimeira_</span>
         <section class="dark-blue-bg intro">
           <h2 style="margin-bottom: 0px;">Ois,<br>me chamo Marina :)</h2>
           <a href="http://marinalimeira.com/" class="blue">marinalimeira.com</a>
@@ -25,7 +24,7 @@
           <br>
 
           <img src="images/logo/bio-logo-white.svg" height="50px" style="margin-bottom: 35px;">&nbsp;&nbsp;&nbsp;
-          <img src="images/logo/testr-logo.png" alt="" height="80px" style="margin-bottom: 15px;">&nbsp;&nbsp;&nbsp;
+          <img src="images/mozilla-br.png" height="150px">&nbsp;&nbsp;&nbsp;
           <img src="images/logo/puc-logo.png" style="margin-top: 10px;">
         </section>
 
@@ -51,11 +50,17 @@
         <section class="no-margin">
           <h2>Produto</h2>
           <p>Atende os requisitos?</p>
+
           <div class="fragment">
             <h2>UX</h2>
             <p>O usuário sabe usar sem precisar de um manual?</p>
             <!-- ele nao ta nem ai pros requisitos. se ele quer ao entrar numa tela, o usu[ario encontre o botao que ele quer clicar de um jeito fácil  -->
           </div>
+        </section>
+        <section>
+          <h2>Infra</h2>
+          <p>Teve downtime?</p>
+
           <div class="fragment">
             <h2>Você</h2>
             <p>Tá usando &lt;insira-framework-legal-aqui&gt;?</p>
@@ -73,6 +78,7 @@
           <h2>Quality Assurance</h2>
 
           <ul>
+            <li>A feature funciona?</li>
             <li>Se abrir uma tela com 1903192 itens do BD, o servidor vai cair?</li>
             <li>Funciona no Windows XP com o IE6?</li>
             <li><strike>Testes manuais de regressão</strike></li>
@@ -84,14 +90,20 @@
           a pessoa responsável por QA vai te ajudar a manter tudo nos eixos :P
         </section>-->
 
-          <section data-background="images/desnecessauro.png"
+        <section> <!-- data-background="images/desnecessauro.png"
                    data-background-repeat="no-repeat"
                    data-background-size="310px 365px"
-                   data-background-position="bottom 10px right 190px">
+                   data-background-position="bottom 10px right 190px"> -->
 
           <h2>Não é papel de ninguém fazer teste manual de regressão a cada deploy em produção,</h2>
-          <p>principalmente se seu time faz<br>Entrega Contínua :)</p>
+          <p>principalmente se seu time faz Entrega Contínua :)</p>
           <!-- a empresa nao paga gente de tecnologia pra fazer a mesma coisa sem[pre -->
+        </section>
+
+        <section data-background="#fff">
+               <!--  data-background-repeat="no-repeat"
+                 data-background-position="center">-->
+          <img src="images/desnecessauro2.jpg" alt="">
         </section>
 
         <section class="blue-bg">
@@ -159,6 +171,18 @@
                  data-background-position="center">
         </section>
 
+        <section data-background="images/piramide-alimentos.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
+        </section>
+
+        <section data-background="images/test-pyramid.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
+        </section>
+
         <!--  
           é uma unidade, entaoo é só um entao nao tem dependencias externas
 
@@ -191,12 +215,20 @@
             <li>Sem dependências externas</li>
             <li>Rápidos</li>
             <li>Independente do resto da aplicação, esse trecho de código funciona como eu quero?</li>
+          </ul>
+        </section>
+
+        <section data-background="images/test-pyramid-unit2.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
+          <h2>Unitários</h2>
+          <ul>
             <li>É aqui que você checa todas possibilidades de erro</li>
             <li>Sensíveis demais a alteração de código</li>
             <li>Ótimo para manter como documentação!</li>
           </ul>
         </section>
-
         <!-- 
 
           é aqui que voce checa se tá tudo ok com o mundo de fora.
@@ -244,6 +276,17 @@
             <li>Satisfazem regras de negócio</li>
             <li>Automatizar testes de regressão &lt;3</li>
             <li>Vai. Demorar. Muito.</li>
+            <!-- colocar uma das saidas do teste da bio -->
+          </ul>
+        </section>
+
+        <section data-background="images/test-pyramid-interface2.png"
+                 data-background-repeat="no-repeat"
+                 data-background-size="647px 530px"
+                 data-background-position="center">
+          <h2>Interface/aceitação</h2>
+
+          <ul>
             <li>Custoso demais para testar todos os caminhos possíveis</li>
             <li>Sensível a alterações de tela</li>
             <li><strong>Ótimo para manter como documentação!!!</strong></li>
@@ -254,10 +297,13 @@
 
         <section>
           <h1>Ferramentas</h1>
-          protractor (angular.js)<br>
-          nightwatch.js<br>
-          nightmare<br>
-          appium (apps!)
+          <ul>
+            <li>protractor (angular.js)</li>
+            <li>nightwatch.js</li>
+            <li>nightmare</li>
+            <li>appium (apps!)</li>
+            </li>
+          </ul>
 
         </section>
 
@@ -313,16 +359,8 @@
 &lt;/div&gt;
             </code>
           </pre>
-          <pre class="fragment no-margin">
-            <code>
-driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
-../preceding-sibling::div/a')).click();
-            </code>
-          </pre>
-        </section>
-
-        <section>
-          <h2>Tá tudo bem se a gente alterar o código e adicionar uma <em>class</em> ou um <em>id</em></h2>
+          <br>
+          <h3>Objetivo: clicar no link <b>específico</b> do usuário</h3>
         </section>
 
         <section>
@@ -331,7 +369,7 @@ driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
 &lt;div class=&quot;list-group-item&quot;&gt;
   &lt;div class=&quot;row table-row&quot;&gt;
     &lt;div class=&quot;col-xs-8&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;openDetails user-link-2837&quot; data-audit=&quot;...&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-audit=&quot;...&quot;&gt;
         &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login
       &lt;/a&gt;&lt;br&gt;
       Usu&aacute;rio realizou login na plataforma.
@@ -346,7 +384,38 @@ driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
           </pre>
           <pre class="fragment no-margin">
             <code>
-driver.findElement(By.className('user-link-2837')).click();
+driver.findElement(By.xpath('//div/b[contains(text(),"Marina Limeira")]/
+../preceding-sibling::div/a')).click();
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Tá tudo bem se a gente alterar o código, não vai atrapalhar a vida de ninguém</h2>
+        </section>
+
+        <section>
+          <pre class="no-margin">
+            <code data-trim>
+&lt;div class=&quot;list-group-item&quot;&gt;
+  &lt;div class=&quot;row table-row&quot;&gt;
+    &lt;div class=&quot;col-xs-8&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;openDetails&quot; data-user-id=&quot;1234&quot; data-audit=&quot;...&quot;&gt;
+        &lt;b&gt;Autentica&ccedil;&atilde;o do usu&aacute;rio&lt;/b&gt; - Login
+      &lt;/a&gt;&lt;br&gt;
+      Usu&aacute;rio realizou login na plataforma.
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-4&quot;&gt;
+      &lt;b&gt;Marina Limeira&lt;/b&gt;&lt;br&gt;
+      marina@mailinator.com
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+          <pre class="fragment no-margin">
+            <code>
+driver.findElement(By.xpath('//a[@data-user-id="1234"]')).click();
             </code>
           </pre>
         </section>
@@ -383,13 +452,13 @@ driver.findElement(By.className('user-link-2837')).click();
           <h2>Cucumber + Selenium</h2>
           <pre>
             <code>
-When(/^Quando eu clico em ([^"]*)$/, function (elementName) {
+When(/^Quando eu clico em (.*)$/, function (elementName) {
   driver.findElement(By.name(elementName)).click();
 });
 
 ...
 
-Then(/^O valor total da compra é R$ ([^"]*)$/, function(total) {
+Then(/^O valor total da compra é R$ (.*)$/, function(total) {
     expect(driver.findElement(By.css('div#total')).getText())
     .to.be.eql(total);
 });
@@ -424,6 +493,7 @@ Then(/^O valor total da compra é R$ ([^"]*)$/, function(total) {
           </div>
           <div class="inline-block center">
             istanbul <br>
+            <img src="images/logo/istanbul.png" height="180px">
           </div>
           <!--mostrar print do codecov
             procurar mais ferramentas de metricas-->
@@ -431,7 +501,7 @@ Then(/^O valor total da compra é R$ ([^"]*)$/, function(total) {
 
         <section>
           <img src="images/medium-bio.png" alt="">
-          <a href="https://medium.com/bionexo">medium.com/bionexo</a>
+          <a href="https://medium.com/bionexo">medium.com/bionexo</a> - estamos contratando! :D
         </section>
 
 
